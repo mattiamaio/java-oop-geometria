@@ -7,12 +7,13 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
-		Rettangolo rettangolo = new Rettangolo();
-
 		System.out.print("Base: ");
-		rettangolo.base = scan.nextInt();
+		int base = scan.nextInt();
+
 		System.out.print("\nAltezza: ");
-		rettangolo.altezza = scan.nextInt();
+		int altezza = scan.nextInt();
+
+		Rettangolo rettangolo = new Rettangolo(base, altezza);
 
 		System.out.println("\nPerimetro: " + rettangolo.calcolaPerimetro());
 
